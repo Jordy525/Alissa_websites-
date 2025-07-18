@@ -1,0 +1,46 @@
+/* Modal custom styles to respect the graphic charter */
+
+.modal-content {
+    background-color: #002B55; /* primary dark */
+    color: #FFFFFF; /* white text */
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-header {
+    border-bottom: 2px solid #FDCB13; /* accent yellow */
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.modal-body p, .modal-body ul, .modal-body h6 {
+    color: #FFFFFF;
+}
+
+.modal-body ul {
+    padding-left: 1.5rem;
+}
+
+.modal-body ul li {
+    margin-bottom: 0.5rem;
+}
+
+.modal-footer {
+    border-top: 2px solid #FDCB13;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #3BB2E6; /* primary light */
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #FDCB13; /* accent yellow */
+    color: #002B55;
+}
