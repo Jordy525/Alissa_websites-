@@ -1,0 +1,274 @@
+/* Root color variables for consistent theming */
+:root {
+    --primary-dark: #002B55; /* Dark blue for navbar and footer */
+    --primary-light: #3BB2E6; /* Light blue for buttons and highlights */
+    --accent-yellow: #FDCB13; /* Accent yellow for hover and highlights */
+    --white: #FFFFFF; /* White color */
+    --light-gray: #f8f9fa; /* Light gray background */
+}
+
+/* Body styles with font and padding to offset fixed navbar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px; /* Compensation for fixed navbar height */
+    line-height: 1.6;
+}
+
+/* Titles use modern Poppins font for better readability */
+.hero-title,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section styles for full viewport height and positioning */
+.hero-section {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero background images cover the container */
+.hero-bg-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Gradient overlay on hero images for better text contrast */
+.hero-bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 43, 85, 0.8) 0%,
+        rgba(59, 178, 230, 0.6) 50%,
+        rgba(0, 43, 85, 0.8) 100%
+    );
+    z-index: 1;
+}
+
+/* Hero content centered vertically and horizontally */
+.hero-content {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Hero title styling with shadow for readability */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero subtitle styling with subtle shadow */
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons in hero section with rounded corners and smooth transitions */
+.hero-buttons .btn {
+    margin: 0.5rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation bar styling with dark background and subtle shadow */
+.navbar {
+    background-color: var(--primary-dark) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar brand image with smooth scale effect on hover */
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+/* Navigation links with smooth color transition */
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Navigation link hover color changes to accent yellow */
+.nav-link:hover {
+    color: var(--accent-yellow) !important;
+}
+
+/* Primary buttons with rounded corners and color transitions */
+.btn-primary {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Primary button hover effect with shadow and slight lift */
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 43, 85, 0.3);
+}
+
+/* Outline light buttons change background and color on hover */
+.btn-outline-light:hover {
+    background-color: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    color: var(--primary-dark);
+}
+
+/* Service cards with rounded corners, shadow, and smooth hover lift */
+.service-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Padding inside service card body */
+.service-card .card-body {
+    padding: 2rem;
+}
+
+/* Service card titles with primary dark color and bold font */
+.service-card h3 {
+    color: var(--primary-dark);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* List items inside service cards with spacing and smaller font */
+.service-card .list-unstyled li {
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+/* Light background section */
+.bg-light {
+    background-color: var(--light-gray) !important;
+}
+
+/* Primary background with gradient for CTA sections */
+.bg-primary {
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-dark)) !important;
+}
+
+/* Text colors for primary and success */
+.text-primary {
+    color: var(--primary-light) !important;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+/* Footer styling with primary dark background */
+footer {
+    background-color: var(--primary-dark) !important;
+}
+
+/* Footer links with white color and smooth hover color change */
+footer a {
+    color: var(--white) !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-yellow) !important;
+}
+
+/* WhatsApp floating button styling */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        margin: 0.5rem auto;
+        width: 80%;
+    }
+    
+    .service-card .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Animated background for hero section */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-section {
+    background: linear-gradient(270deg, #002B55, #3BB2E6, #FDCB13, #002B55);
+    background-size: 800% 800%;
+    animation: gradientShift 15s ease infinite;
+    position: relative;
+    overflow: hidden;
+}

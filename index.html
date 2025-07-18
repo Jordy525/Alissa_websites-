@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alissa IA - Intelligence Artificielle Gabonaise</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <!-- Google Fonts: Poppins for modern titles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personnalisé -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome (icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/logo.png" alt="Alissa IA" height="40" class="me-2">
+                <div class="d-flex flex-column">
+                    <span class="fs-5 fw-bold text-white">Alissa IA</span>
+                    
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Qui sommes-nous ?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Réalisations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="community.html">Communauté</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section position-relative overflow-hidden bg-primary text-white">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 60vh;">
+                        <h1 class="display-3 fw-bold hero-title mb-3 animate__animated animate__fadeInDown">L'IA au service du Gabon</h1>
+                        <p class="lead hero-subtitle mb-4 animate__animated animate__fadeInUp">Solutions innovantes pour l'éducation, la productivité et les services publics</p>
+                        <div class="hero-buttons animate__animated animate__fadeInUp">
+                            <a href="services.html" class="btn btn-warning btn-lg me-3 fw-bold shadow-lg">
+                                <i class="fas fa-robot me-2"></i>Créer mon chatbot
+                            </a>
+                            <a href="services.html#alissa-school" class="btn btn-light btn-lg fw-bold shadow">
+                                <i class="fas fa-graduation-cap me-2"></i>Découvrir Alissa School
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 60vh;">
+                        <h1 class="display-3 fw-bold hero-title mb-3 animate__animated animate__fadeInDown">Innovation technologique gabonaise</h1>
+                        <p class="lead hero-subtitle mb-4 animate__animated animate__fadeInUp">Des solutions IA adaptées au contexte local</p>
+                        <div class="hero-buttons animate__animated animate__fadeInUp">
+                            <a href="services.html" class="btn btn-warning btn-lg me-3 fw-bold shadow-lg">
+                                <i class="fas fa-robot me-2"></i>Créer mon chatbot
+                            </a>
+                            <a href="services.html#alissa-school" class="btn btn-light btn-lg fw-bold shadow">
+                                <i class="fas fa-graduation-cap me-2"></i>Découvrir Alissa School
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 60vh;">
+                        <h1 class="display-3 fw-bold hero-title mb-3 animate__animated animate__fadeInDown">Solutions IA pour l'éducation</h1>
+                        <p class="lead hero-subtitle mb-4 animate__animated animate__fadeInUp">Améliorez la productivité et l'apprentissage</p>
+                        <div class="hero-buttons animate__animated animate__fadeInUp">
+                            <a href="services.html" class="btn btn-warning btn-lg me-3 fw-bold shadow-lg">
+                                <i class="fas fa-robot me-2"></i>Créer mon chatbot
+                            </a>
+                            <a href="services.html#alissa-school" class="btn btn-light btn-lg fw-bold shadow">
+                                <i class="fas fa-graduation-cap me-2"></i>Découvrir Alissa School
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Section Services -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Section title -->
+            <h2 class="text-center mb-5">Nos Services</h2>
+            <div class="row g-4">
+                <!-- Service card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-robot fa-3x text-primary mb-3"></i>
+                            <h3>Chatbots WhatsApp</h3>
+                            <p>Automatisez vos interactions clients avec nos solutions IA. Prise de rendez-vous, réponses automatiques et gestion d'historique.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Prise de rendez-vous</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Réponses automatiques</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Historique des conversations</li>
+                            </ul>
+                            <a href="services.html" class="btn btn-sm btn-outline-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                            <h3>Alissa School</h3>
+                            <p>Plateforme éducative intelligente basée sur l'IA pour les élèves gabonais.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Contenu adaptatif</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Suivi personnalisé</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Interface intuitive</li>
+                            </ul>
+                            <a href="services.html#alissa-school" class="btn btn-sm btn-outline-primary">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cogs fa-3x text-primary mb-3"></i>
+                            <h3>Consulting & Formation</h3>
+                            <p>Accompagnement personnalisé et formations en intelligence artificielle.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Consulting IA</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Formations sur mesure</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Sensibilisation</li>
+                            </ul>
+                            <a href="services.html#consulting" class="btn btn-sm btn-outline-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Communauté -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Community text content -->
+                <div class="col-md-6">
+                    <h2 class="mb-4">Rejoignez Alissa IA Hub</h2>
+                    <p class="mb-4">Notre communauté regroupe des passionnés d'intelligence artificielle, des entrepreneurs et des étudiants. Échangez, apprenez et participez à l'innovation technologique au Gabon.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-users text-primary me-2"></i>Réseau de professionnels</li>
+                        <li><i class="fas fa-lightbulb text-primary me-2"></i>Partage d'idées innovantes</li>
+                        <li><i class="fas fa-graduation-cap text-primary me-2"></i>Formations et ateliers</li>
+                        <li><i class="fas fa-handshake text-primary me-2"></i>Opportunités de collaboration</li>
+                    </ul>
+                    <a href="community.html" class="btn btn-primary btn-lg mt-3">
+                        <i class="fas fa-users me-2"></i>Rejoindre la communauté
+                    </a>
+                </div>
+                <!-- Community image -->
+                <div class="col-md-6">
+                    <img src="assets/images/community-illustration.jpg" alt="Communauté Alissa IA" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Prêt à transformer votre entreprise avec l'IA ?</h2>
+            <a href="contact.html" class="btn btn-light btn-lg">Demander une démo</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Footer logo and slogan -->
+                <div class="col-md-4">
+                    <img src="assets/logo.png" alt="Alissa IA" height="40">
+                    <span class="fs-5 fw-bold text-white">Alissa IA</span>
+                    <p class="mt-2">L'intelligence artificielle pour tous.</p>
+                </div>
+                <!-- Useful links -->
+                <div class="col-md-4">
+                    <h5>Liens utiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">À propos</a></li>
+                        <li><a href="pricing.html" class="text-white">Tarifs</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Social media links -->
+                <div class="col-md-4">
+                    <h5>Réseaux sociaux</h5>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <hr>
+            <!-- Updated company information -->
+            <p class="text-center mb-0">
+                &copy; 2025 Alissa IA. Tous droits réservés.<br>
+                Contact : <a href="mailto:contact@alissa-ia.site" class="text-white">contact@alissa-ia.site</a> | 
+                Tél : +241 074570040, +241 65182611<br>
+                Localisation : Libreville, Rue pecquere, derrière Ecobank Centre ville, SING SA
+            </p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+241074570040" class="whatsapp-btn" target="_blank" title="Contacter via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS personnalisé -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
