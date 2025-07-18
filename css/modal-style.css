@@ -28,6 +28,14 @@
     margin-bottom: 0.5rem;
 }
 
+/* Distinct style for titles in info blocks */
+.modal-body .row h6 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #FDCB13; /* accent yellow */
+    margin-bottom: 0.5rem;
+}
+
 .modal-footer {
     border-top: 2px solid #FDCB13;
 }
